@@ -1,0 +1,13 @@
+<% team = ["louis", "nicolas", "yann"] %>
+<div class="team text-center">
+  <div class="container">
+    <div class="row">
+      <% team.each do |team| %>
+        <div class="col-xs-4">
+          <img src="http://placehold.it/90x90" alt="photo" class="img-circle">
+          <p><%= team %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

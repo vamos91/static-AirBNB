@@ -1,0 +1,10 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Read from data.flats with owner key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<%= image_tag flat.owner_picture, class: "img-circle" %>
+<p><%= flat.owner_name %></p>
+<h1><%= flat.summary %></h1>
+<p><%= flat.city %></p>
